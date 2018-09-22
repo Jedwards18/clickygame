@@ -1,11 +1,15 @@
-import React from "react";
+import React, {Component} from "react";
 import "./Title.css";
 
-const Title = props => (
-    <div className="title" id="myHeader">{props.children}
-        <h1 className="text">Clicky Game!</h1>
-        <h1 className="score">Score: 0</h1>
-    </div>
-);
+class Title extends Component {
+    render() {
+        return(
+            <nav className="navbar navbar-default navbar-fixed-top">
+                <div className="leftItem">Test Your Memory!</div>
+                <div className="centerItem"></div>
+                <div className="rightItem">Score: {this.props.score}</div>
+            </nav>
+        )};
+};
 
 export default Title;

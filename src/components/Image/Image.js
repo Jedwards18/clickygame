@@ -2,14 +2,10 @@ import React from "react";
 import "./Images.css";
 
 const Image = props => (
-    <div className="card">
+    <div className="card" onClick = {props.setClicked}>
         <div className="img-container">
-            <img alt={props.name} src={props.image} id={props.id} state={props.state} />
+            <img alt={props.id} src={props.image}/>
             <br></br>
-            {/* <button onClick={() => props.setClicked(props.id)} className="btn btn-primary"> */}
-            <button onClick={() => props.setState({ state: "clicked"})} className="btn btn-primary">
-            Select
-            </button>
         </div>
     </div>
 );

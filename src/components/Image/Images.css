@@ -1,8 +1,8 @@
 .card {
     background: #fff;
     border-radius: 2px;
+    border: none;
     position: relative;
-    text-align: left;
     background: none;
     margin-bottom: 30px;
   }
@@ -19,7 +19,3 @@
     overflow: hidden;
     text-align: center;
   }
-
-button {
-  width: 200px;
-} 
